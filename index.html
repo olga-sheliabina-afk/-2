@@ -33,7 +33,7 @@
     img{display:block;max-width:100%}
     a{text-decoration:none;color:inherit}
     .container{width:min(calc(100% - 32px),var(--max));margin:0 auto}
-    .section{padding:64px 0}
+    .section{padding:56px 0}
     .eyebrow{
       display:inline-block;
       padding:8px 14px;
@@ -46,12 +46,12 @@
     }
     .section-title{
       margin:0 0 10px;
-      font-size:clamp(28px,4vw,42px);
-      line-height:1.1;
+      font-size:clamp(26px,3.6vw,36px);
+      line-height:1.14;
       color:var(--accent-dark);
       letter-spacing:-.03em;
     }
-    .section-text{margin:0;max-width:760px;color:var(--muted);font-size:17px}
+    .section-text{margin:0;max-width:720px;color:var(--muted);font-size:16px}
     .topbar{
       position:sticky;
       top:0;
@@ -86,38 +86,38 @@
     .btn:hover{transform:translateY(-1px)}
     .btn-primary{background:linear-gradient(135deg,var(--accent) 0%,#a24b67 100%);color:#fff;box-shadow:0 14px 28px rgba(123,49,72,.18)}
     .btn-secondary{background:var(--paper);border:1px solid var(--line);color:var(--accent-dark)}
-    .hero{padding:34px 0 20px}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:center}
+    .hero{padding:26px 0 12px}
+    .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:20px;align-items:stretch}
     .panel,.photo-shell,.simple-card,.place-card,.contact-card,.review-card{
       background:var(--paper);
       border:1px solid rgba(123,49,72,.08);
       border-radius:var(--radius);
       box-shadow:var(--shadow);
     }
-    .panel{padding:28px;background:linear-gradient(180deg,#fff 0%,#fff5f1 100%)}
+    .panel{padding:24px;background:linear-gradient(180deg,#fff 0%,#fff6f2 100%)}
     h1{
-      margin:0 0 14px;
-      font-size:clamp(36px,5vw,58px);
-      line-height:1.02;
+      margin:0 0 12px;
+      font-size:clamp(30px,4.2vw,44px);
+      line-height:1.08;
       color:var(--accent-dark);
       letter-spacing:-.04em;
     }
-    .lead{margin:0 0 12px;color:var(--muted);font-size:17px}
+    .lead{margin:0 0 10px;color:var(--muted);font-size:16px}
     .lead strong{color:var(--accent-dark)}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
     .hero-list,.compact-list,.diag-list,.symptom-list{
       display:grid;
-      gap:10px;
-      margin-top:22px;
+      gap:8px;
+      margin-top:18px;
     }
     .hero-list{grid-template-columns:repeat(2,minmax(0,1fr))}
     .list-item,.diag-list span,.symptom-list span,.meta-line,.mini-item{
-      padding:12px 14px;
-      border-radius:16px;
+      padding:10px 12px;
+      border-radius:14px;
       background:var(--soft);
       border:1px solid rgba(123,49,72,.08);
       color:var(--accent-dark);
-      font-size:15px;
+      font-size:14px;
       font-weight:600;
     }
     .compact-section-title{
@@ -157,48 +157,49 @@
       font-size:14px;
       line-height:1.35;
     }
-    .photo-shell{padding:16px;background:linear-gradient(180deg,rgba(243,197,180,.28) 0%,rgba(216,141,158,.14) 100%)}
-    .photo-frame{position:relative;overflow:hidden;border-radius:20px;min-height:620px}
-    .photo-frame img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+    .photo-shell{padding:12px;background:linear-gradient(180deg,rgba(243,197,180,.22) 0%,rgba(216,141,158,.10) 100%)}
+    .photo-frame{position:relative;overflow:hidden;border-radius:18px;min-height:520px}
+    .photo-frame img{width:100%;height:100%;object-fit:cover;object-position:center 16%}
     .photo-note{
       position:absolute;
-      left:18px;
-      right:18px;
-      bottom:18px;
-      padding:16px 18px;
-      border-radius:18px;
-      background:rgba(86,34,48,.76);
+      left:14px;
+      right:14px;
+      bottom:14px;
+      padding:12px 14px;
+      border-radius:14px;
+      background:rgba(86,34,48,.68);
       color:#fff;
     }
-    .photo-note strong{display:block;margin-bottom:4px;font-size:18px}
-    .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}
-    .stat{padding:18px;border-radius:18px;background:rgba(255,255,255,.86);border:1px solid rgba(123,49,72,.08)}
-    .stat strong{display:block;color:var(--accent-dark);font-size:18px}
-    .stat span{font-size:14px;color:var(--muted);font-weight:700}
-    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}
-    .simple-card{padding:28px}
+    .photo-note strong{display:block;margin-bottom:2px;font-size:16px}
+    .photo-note span{font-size:13px;line-height:1.4}
+    .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:14px}
+    .stat{padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.86);border:1px solid rgba(123,49,72,.08)}
+    .stat strong{display:block;color:var(--accent-dark);font-size:17px}
+    .stat span{font-size:13px;color:var(--muted);font-weight:700}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+    .simple-card{padding:24px}
     .simple-card h3,.place-card h3,.review-card h3,.contact-card h3{margin:0 0 12px;font-size:24px;color:var(--accent-dark)}
     .simple-card p,.place-card p,.review-card p,.contact-card p{margin:0 0 12px;color:var(--muted)}
-    .places{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:28px}
-    .place-card{padding:26px}
+    .places{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:24px}
+    .place-card{padding:22px}
     .place-meta{display:grid;gap:10px;margin:16px 0}
     .place-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
     .online-box{
-      padding:30px;
-      border-radius:28px;
+      padding:26px;
+      border-radius:24px;
       background:linear-gradient(135deg,#6b2c40 0%,#a05069 100%);
       color:#fff;
       box-shadow:var(--shadow);
     }
-    .online-box h2{margin:0 0 10px;font-size:clamp(28px,4vw,40px);line-height:1.08}
-    .online-box p{margin:0;color:rgba(255,255,255,.88)}
-    .online-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;margin-top:22px}
-    .contact-card{padding:24px;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.16);box-shadow:none;color:#fff}
+    .online-box h2{margin:0 0 10px;font-size:clamp(24px,3.6vw,34px);line-height:1.12}
+    .online-box p{margin:0;color:rgba(255,255,255,.88);font-size:15px}
+    .online-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:18px}
+    .contact-card{padding:20px;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.16);box-shadow:none;color:#fff}
     .contact-card p{color:rgba(255,255,255,.88)}
     .contact-links{display:grid;gap:10px;margin-top:16px}
     .contact-links a{padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.14);font-weight:800}
-    .review-card{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:28px;margin-top:24px}
-    .footer{padding:28px 0 42px;font-size:14px;color:var(--muted)}
+    .review-card{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:24px;margin-top:20px}
+    .footer{padding:24px 0 38px;font-size:14px;color:var(--muted)}
     .footer-box{display:flex;justify-content:space-between;gap:24px;padding-top:20px;border-top:1px solid var(--line)}
     .mobile-cta{
       position:fixed;
@@ -217,12 +218,13 @@
     @media (max-width:1080px){
       .hero-grid,.two-col,.places,.online-grid,.review-card,.stats{grid-template-columns:1fr}
       .diag-list{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .photo-frame{min-height:460px}
     }
     @media (max-width:760px){
       .topbar-inner{flex-direction:column;align-items:flex-start;padding:14px 0;min-height:auto}
       .hero-list{grid-template-columns:1fr}
       .diag-list,.symptom-list{grid-template-columns:1fr}
-      .photo-frame{min-height:460px}
+      .photo-frame{min-height:400px}
       .footer-box{flex-direction:column}
       .mobile-cta{display:block}
       body{padding-bottom:88px}
@@ -254,9 +256,9 @@
           <div class="eyebrow">Ревматология • подагра • второе мнение</div>
           <h1>Помогаю пациентам контролировать хронические заболевания и жить понятнее и спокойнее.</h1>
           <p class="lead">Желябина Ольга Владимировна — кандидат медицинских наук, научный сотрудник и практический врач-ревматолог со стажем 25 лет.</p>
-          <p class="lead"><strong>Для записи лучше писать, а не звонить.</strong> Так проще отправить вопрос, документы и получить ответ в удобном формате.</p>
+          <p class="lead"><strong>Для записи лучше писать, а не звонить.</strong></p>
           <div class="hero-list">
-            <div class="list-item">Тысячи пациентов с выстроенной тактикой ведения.</div>
+            <div class="list-item">25 лет практики и тысячи пациентов.</div>
             <div class="list-item">Подробное заключение по итогам очного приема.</div>
             <div class="list-item">Сильная экспертность по подагре и микрокристаллическим артритам.</div>
             <div class="list-item">Понятное объяснение диагноза и дальнейших шагов.</div>
@@ -272,7 +274,7 @@
             <img src="assets/doctor-photo.jpg" alt="Желябина Ольга Владимировна" />
             <div class="photo-note">
               <strong>Желябина Ольга Владимировна</strong>
-              <span>Один из сильнейших экспертов по подагре и микрокристаллическим артритам в русскоязычном пространстве.</span>
+              <span>Кандидат медицинских наук, врач-ревматолог.</span>
             </div>
           </div>
         </div>
